@@ -1,0 +1,17 @@
+// _mainMenu 
+@use '../lets';
+
+.title{
+    font-family: lets.$main-fonts;
+    margin-top: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    color: lets.$main-color;
+
+    box-shadow: 1px 1px #fff;
+
+    display: flex;
+    justify-content: center;
+
+}

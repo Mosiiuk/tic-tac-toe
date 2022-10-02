@@ -1,0 +1,14 @@
+@use '_lets';
+@use './blocks/_mainMenu';
+@use './blocks/buttons';
+@use './blocks/cell';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+body{
+    background: lets.$bg;
+    margin: 0;  
+     
+}
+

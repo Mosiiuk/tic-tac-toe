@@ -1,0 +1,22 @@
+// _buttons.scss
+
+@use '../lets';
+
+#buttonsContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.side{
+    width: 100px;
+    height: 100px;
+    font-size: 72px;
+    font-weight: 700;
+    margin: 15px;
+
+    border-radius: 50%;
+    color: #fff;
+    background: lets.$bg;
+    border: none;
+    cursor: pointer;
+}
