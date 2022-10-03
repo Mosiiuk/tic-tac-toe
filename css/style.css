@@ -10,14 +10,9 @@
   justify-content: center;
 }
 
-#buttonsContainer {
+.side {
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-
-.side {
-  width: 100px;
   height: 100px;
   font-size: 72px;
   font-weight: 700;
@@ -41,11 +36,86 @@
   border: 1px solid #000;
   font-size: 80px;
   text-align: center;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.cell:hover {
+  box-shadow: 0 0 40px 40px red inset;
+}
+
+.winn {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textWinn {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+
+.buttonRestart {
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 2em auto;
+  max-width: 300px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  letter-spacing: 0;
+  border: none;
+}
+
+.buttonRestart:hover,
+.buttonRestart:active {
+  letter-spacing: 5px;
+}
+
+.buttonRestart:after,
+.buttonRestart:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.buttonRestart:hover:after,
+.buttonRestart:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.buttonRestart:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
 }
 
 body {
   background: #111131;
   margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

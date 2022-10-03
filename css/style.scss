@@ -1,7 +1,8 @@
 @use '_lets';
 @use './blocks/_mainMenu';
-@use './blocks/buttons';
+@use './blocks/side';
 @use './blocks/cell';
+@use './blocks/winn';
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
@@ -12,3 +13,7 @@ body{
      
 }
 
+#main{
+    display: flex;
+    flex-direction: column;
+}

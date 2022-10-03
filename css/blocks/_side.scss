@@ -1,14 +1,10 @@
-// _buttons.scss
+// _side.scss
 
 @use '../lets';
 
-#buttonsContainer{
+.side{
     display: flex;
     justify-content: center;
-    width: 100%;
-}
-.side{
-    width: 100px;
     height: 100px;
     font-size: 72px;
     font-weight: 700;

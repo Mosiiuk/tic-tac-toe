@@ -12,4 +12,8 @@
 
     font-size: 80px;
     text-align: center;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover{
+        box-shadow: 0 0 40px 40px red inset;
+    }
 }
